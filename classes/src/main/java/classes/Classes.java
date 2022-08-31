@@ -1,6 +1,7 @@
 package classes;
 
 import java.util.Scanner;
+import java.time.LocalDateTime;
 
 public class Classes {
 
@@ -8,7 +9,8 @@ public class Classes {
         Scanner teclado = new Scanner(System.in);
         System.out.print("Digite o ano que você nasceu");
         int ano = teclado.nextInt();
-        int idade = 2022 - ano;
-        System.out.print("A idade da pessoa é " + idade);
+        int anoAtual = LocalDateTime.now().getYear();
+        int idade = anoAtual - ano;
+        System.out.print("A idade da pessoa é " + idade + " anos");
     }
 }
