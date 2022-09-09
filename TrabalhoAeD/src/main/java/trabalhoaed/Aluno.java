@@ -17,7 +17,7 @@ public class Aluno {
       this.matricula = 9999999;
     } else {
       this.matricula = matricula;
-    }
+    } 
     if (email.matches("\\w+@\\w+\\.\\w{2,3}")) {
       this.email = email;
     } else {
@@ -38,14 +38,14 @@ public class Aluno {
     }
   }
   
-  public String getNome() {
-    return this.nome;
-  }
-  
   public void setNome(String nome) {
     this.nome = nome;
   }
   
+  public String getNome() {
+    return this.nome;
+  }
+
   public int getMatricula() {
     return this.matricula;
   }

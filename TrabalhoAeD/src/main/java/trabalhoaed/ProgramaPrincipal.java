@@ -44,7 +44,6 @@ public class ProgramaPrincipal {
         Aluno aluno = new Aluno(nome, matricula, email);
         listaDeAlunos.add(aluno);
         System.out.println("Aluno criado com sucesso");
-        menu();
             }
       case 2 -> {
         System.out.println("Qual é o nome desse aluno?");

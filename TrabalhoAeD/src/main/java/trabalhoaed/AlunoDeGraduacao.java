@@ -3,8 +3,8 @@ package trabalhoaed;
 import java.util.Scanner;
 
 public class AlunoDeGraduacao extends Aluno {
-  String curso;
-  int anoEntrada;
+  private String curso;
+  private int anoEntrada;
   
   public AlunoDeGraduacao(String nome, int matricula, String email, String curso, int anoEntrada) {
     super(nome, matricula, email);
